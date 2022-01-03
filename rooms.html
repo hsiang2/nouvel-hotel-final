@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rooms & suites | Nouvel Hotel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/rooms.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/rooms.js"></script>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="box">
+                <img class="loading-logo" src="img/logo_nouvel contact.png" alt="">
+                <div class="loading">
+                    <span>N</span>
+                    <span>O</span>
+                    <span>U</span>
+                    <span>V</span>
+                    <span>E</span>
+                    <span>L</span>
+                    <span></span>
+                    <span>H</span>
+                    <span>O</span>
+                    <span>T</span>
+                    <span>E</span>
+                    <span>L</span>
+                </div>
+            </div>
+        </div>
+        <div class="container--fluid nav-bg">
+            <nav class="container nav">
+                <!-- <span class="nav__menu">&#9776</span> -->
+                <button class="nav__menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg width="25" height="100" viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                  </button>
+                <ul class="left-nav-list">
+                    <li class="left-nav-item">
+                        <a href="#" class="left-nav-link link5">ABOUT US</a>
+                        <ul class="nav-sublist">
+                            <li class="sublist-item"><a href="#" class="sublist-link">STORY</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">ART & DESIGN</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">FAQ</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">LATEST NEWS</a></li>
+                        </ul>
+                    </li>
+                    <li class="left-nav-item">
+                        <a href="#" class="left-nav-link link1">ROOMS & SUITES</a>
+                        <ul class="nav-sublist">
+                            <li class="sublist-item"><a href="rooms.html" class="sublist-link">SINGLE ROOM</a></li>
+                            <li class="sublist-item"><a href="rooms.html" class="sublist-link">DOUBLE ROOM</a></li>
+                            <li class="sublist-item"><a href="rooms.html" class="sublist-link">JUNIOR SUITE</a></li>
+                        </ul>
+                    </li>
+                    <li class="left-nav-item">
+                        <a href="#" class="left-nav-link link2">FOOD & DRINKS</a>
+                        <ul class="nav-sublist">
+                            <li class="sublist-item"><a href="#" class="sublist-link">OVERVIEW</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">CAFÉ & BAR</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">ROOM SERVICE</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">RESTAURANTS</a></li>
+                        </ul>
+                    </li>
+                    <li class="left-nav-item">
+                        <a href="#" class="left-nav-link link3">ACCESS</a>
+                        <ul class="nav-sublist">
+                            <li class="sublist-item"><a href="#" class="sublist-link">LOCATION</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">BUSES & CARS</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">TRAMS & TRAINS</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">GOOGLE MAP</a></li>
+                        </ul>
+                    </li>
+                    <li class="left-nav-item">
+                        <a href="#" class="left-nav-link link4">EXPERIENCES</a>
+                        <ul class="nav-sublist">
+                            <li class="sublist-item"><a href="#" class="sublist-link">CELEBRATIONS</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">WELLNESS & SPA</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">ADVENTURES</a></li>
+                            <li class="sublist-item"><a href="#" class="sublist-link">FROM GUESTS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="right-nav-list">
+                    <li class="right-nav-item"><a href="#" class="right-nav-link link6">Login</a></li>
+                    <li class="right-nav-item"><a href="contact.html" class="right-nav-link link7">Contact</a></li>
+                    <li class="languages right-nav-item"><a href="#" class="right-nav-link"><select name="name">
+                        <option value="EN">EN</option>
+                        <option value="DE">DE</option>
+                    </select></a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="header-logo">
+                    <img src="img/logo_header_nouvel.png" alt="the logo of Nouvel hotel" class="header-logo-img">
+                    <h2 class="header-logo-title">NOUVEL HOTEL</h2>
+                </a>
+                <a href="#" class="header-btn">BOOK</a>
+            </div>
+        </header>
+        <div class="container--fluid breadcrumb">
+            <div class="container">
+                <a href="index.html" style="color: #CFCDCD;">HOME</a> 
+                <span style="color: rgba(63, 61, 61, 1);">/ ROOM&SUITES</span>
+            </div>
+        </div>
+        <section class="container room-container">
+            <img src="img/btn_prev.png" id="room-prev">
+            <div class="row room">
+                <span id="indicator1"></span>
+                <span id="indicator2"></span>
+                <span id="indicator3"></span>
+                <div class="room-item col-md-4 col-lg-4">
+                    <img src="img/img_single room.png" alt="a picture of the single room " class="room-img" > 
+                    <a href="#" class="room-btn">SINGLE ROOM</a>
+                </div>
+                <div class="room-item col-md-4 col-lg-4">
+                    <img src="img/img_double room classic.png" alt="a picture of the double room" class="room-img">
+                    <a href="#" class="room-btn">DOUBLE ROOM CLASSIC</a>
+                </div>
+                <div class="room-item col-md-4 col-lg-4">
+                    <img src="img/img_double room deluxe.png" alt="a picture of the double room deluxe" class="room-img">
+                    <a href="#" class="room-btn">DOUBLE ROOM DELUXE</a>
+                </div>
+            </div>
+            <img src="img/btn_next.png" id="room-next">
+        </section>
+        <div class="suites container--fluid">
+            <div class="container">
+                <div class="suites-block wow animate__animated animate__fadeInLeft">
+                    <img src="img/img_junior suite.png" alt="a picture of the junior suites" class="suites-img">
+                    <div class="suites-text-block">
+                        <h1 class="suites-title">JUNIOR SUITE</h1>
+                        <p class="suites-content">Our junior suite offer a private balcony, You can enjoy the stunning winter view through the french window.</p>
+                        <a href="#" class="suites-btn">EXPLORE MORE</a>
+                    </div>
+                </div>
+                <div class="suites-block deluxe-block wow animate__animated animate__fadeInRight">
+                    <div class="deluxe-text-block">
+                       <h1 class="suites-title">JUNIOR SUITE DELUXE</h1>
+                       <p class="suites-content">A sumptuous place allows you to escape the bustle of the city, Enjoying quiet moments of relaxation.</p>
+                       <a href="#" class="suites-btn">EXPLORE MORE</a>
+                    </div>
+                    <img src="img/img_junior suite deluxe.png" alt="a picture of the junior suites deluxe" class="deluxe-img">
+                </div>
+            </div>
+        </div>   
+        <footer class="footer container--fluid">
+            <div class="footer-content container">
+                <div class="row">
+                    <div class="col col-md-4 col-lg-3">
+                        <a href="index.html" class="footer-logo">
+                            <img src="img/logo_footer_nouvel.png" alt="the logo of Nouvel hotel" class="footer-logo-img">
+                            <h2 class="footer-logo-title">NOUVEL HOTEL</h2>
+                        </a>
+                    </div>
+                    <div class="col col-md-8 col-lg-9 contact-newsletter">
+                        <div class="contact"> 
+                            <h4 class="footer-title">CONTACT US</h4>
+                            <p class="contact-text">
+                                 Address:<br> Rue des Quatre-Saisons 23,  1211, Genf, Switzerland
+                             </p>
+                             <p class="contact-text">Phone:<br> +41 18 791 3928</p>
+                             <p class="contact-text">Email:<br> info@nouvelhotel.com</p>
+                        </div>
+                        <div class="newsletter">
+                            <h4 class="footer-title">NEWSLETTER</h4>
+                            <div class="footer-input">
+                                <input type="text" placeholder="Enter your email" class="footer-input-text">
+                                <input type="image" src="img/icon_footer.png">
+                            </div>
+                            <div class="newsletter-icon">
+                                <a href="#"><img src="img/btn_facebook.png" alt="the Facebook button" class="newsletter-icon-img"></a>
+                                <a href="#"><img src="img/btn_instagram.png" alt="the Instagram button" class="newsletter-icon-img"></a>
+                                <a href="#"><img src="img/btn_twitter.png" alt="the Twitter button" class="newsletter-icon-img"></a>
+                                <a href="#"><img src="img/btn_youtube.png" alt="the YouTube button" class="newsletter-icon-img"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <p class="footer-copyright container--fluid">© 2021 Nouvel Hotel</p>
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </div>
+        <script>
+            $(window).on('load', function(){
+                setTimeout(() => {
+                    $('.hero').fadeOut("slow");
+                }, 2000);
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,395 @@
+/*global*/
+html {background-color: rgb(255, 250, 241);}
+/* #Progress
+================================================== */
+@media screen and (min-width: 768px) {
+    .progress-wrap {
+        box-shadow: inset  0 0 0 2px rgba(79, 89, 97, 0.4);
+    }
+    .progress-wrap::after {
+        content: url("../img/arrow3.png"); 
+    }
+    .progress-wrap::before {
+        content: url("../img/arrow3.png");
+    }
+    .progress-wrap svg.progress-circle path {
+        stroke: rgb(25, 35, 42);
+    }
+}
+/*nav*/
+.nav-bg { background-color: rgba(255, 250, 241, 65%);}
+
+.nav__menu {color: rgb(63, 61, 61);}
+
+.left-nav-list {background-color: rgba(255, 250, 241, 0.7);}
+
+.right-nav-link {color: rgb(63, 61, 61);}
+
+.left-nav-link {color: rgb(25, 35, 42);}
+
+.languages select{color:rgb(25, 35, 42);}
+
+select:active, select:hover {color: rgb(158, 96, 77);}
+
+.sublist-link {color: rgb(79, 89, 97);}
+
+@media screen and (min-width: 768px) {
+    .left-nav-list {background-color: transparent;}
+
+    .sublist-link {color: rgb(25, 35, 42);}
+    /* =============hover new============= */
+    .right-nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        display: block;
+        transition: all 0.5s ease;
+        bottom: 30%;
+      }
+      .link6:hover::after {
+        width: 3.3%;
+        height: 0.7px;
+        background-color: rgb(63, 61, 61);;
+      }
+      .link7:hover::after {
+        width: 4.5%;
+        height: 0.7px;
+        background-color: rgb(63, 61, 61);
+      }
+    .left-nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        display: block;
+        transition: all 0.5s ease;
+        bottom:30%;
+      }
+      .link1:hover::after {
+        width: 11%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+      .link5:hover::after {
+        width:6.5%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+      .link2:hover::after {
+        width:10%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+      .link3:hover::after {
+        width:5%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+      .link4:hover::after {
+        width:9%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+}
+
+/*header*/
+.header {
+    background-color: rgb(255, 250, 241);
+    background-image: url(../img/img_header\ contact.png);
+}
+
+.header-logo-title {color: rgb(255, 232, 195);}
+
+.header-btn {
+    border: 1px solid rgb(255, 232, 195);
+    color: rgb(255, 232, 195);
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        background-image: url(../img/img_header\ contact.png);
+    }
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    height: 29px;
+    background-color:  rgba(255, 232, 195, 0.44);
+}
+
+.breadcrumb .container {padding-left: 20px;}
+
+.main-title {
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    color: rgb(25, 35, 42);
+    font-family: 'Cormorant Garamond', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+.content-container {
+    width: 93%; 
+    background-color: rgb(25, 35, 42);
+    margin: 40px auto 50px;
+    padding-bottom: 80px;
+}
+
+.content-title {
+    font-size: 1.8rem;
+    color: rgb(255, 232, 195);
+    font-family: 'Cormorant Garamond', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .content-container {
+        margin: 0 auto 40px;
+        padding-bottom: 70px;
+    }
+
+    .content-title {padding-top: 50px;}
+}
+
+@media screen and (min-width: 1260px) {
+
+    .content-container {margin-bottom: 30px;}
+
+    .main-title {
+        margin: 50px auto;
+        font-size: 3.6rem;
+    }
+
+    .content-container {
+        width: 90%;
+        padding-bottom: 0;
+    }
+
+    .content-title {
+        font-size: 2.4rem;
+        padding-top: 80px;
+    }
+}
+
+/*form*/
+.register {
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.label {
+    display: block;
+    color: rgb(255, 250, 241);
+    font-size: 1.6rem;
+}
+
+.input {
+    color: rgb(255, 232, 195);
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: none;
+}
+
+.input:focus {outline:none}
+
+.input-container {width: 85%;}
+
+.block-name, .block-messages, .block-phone, .block-email {
+    margin-top: 70px;
+    border-bottom: 1px solid rgb(255, 232, 195);
+}
+
+::placeholder {
+    color: rgba(207, 205, 205, 0.5);
+    font-size: 1.4rem;
+    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.send {
+    width: 85%;
+    background-color: transparent;
+    border: 1px solid rgb(255, 232, 195);
+    height: 47px; 
+    color: rgb(255, 232, 195);
+    font-size: 1.8rem;
+    margin-top: 90px;
+    
+}
+
+.send:after {
+    background-image: linear-gradient(355deg, rgb(255, 232, 195), rgb(255, 251, 244));
+    transition: all 0.3s ease;
+  }
+  .send:hover {
+    color: rgb(25, 35, 42);
+    background-color: rgb(255, 232, 195);
+  }
+  .send:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  
+@media screen and (min-width: 768px) {
+
+    .register {margin-bottom: 90px;}
+
+    .input-container {width: 75%;}
+
+    .block-name, .block-messages, .block-phone, .block-email {margin-top: 40px;}
+
+    .input-container-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .block-phone {
+        width: 50%;
+        margin-right: 50px;
+    }
+    
+    .block-email {width: 50%;}
+
+    .send {
+        width: 75%;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+
+    .input-container {
+        width: 60%;
+        margin-right: 71px;
+    }
+
+    .label {font-size: 1.8rem;}
+
+    .input {font-size: 1.8rem;}
+
+    .block-name, .block-messages, .block-email, .block-phone {margin-top: 45px;}
+
+    .block-phone {margin-right: 55px;}
+
+    .send {
+        align-self: flex-end;
+        width: 147px;
+        height: 47px;
+    }
+}
+
+/*contact details*/
+.details-container{
+    display: flex;
+    color: rgb(255, 250, 241);
+    margin: 76px auto 80px;
+    width: 270px;
+}
+
+.details-block {
+    display: flex;
+    align-items: center;
+    margin: 37px 0;
+    justify-content: space-between;
+}
+
+.phone {flex-direction: row-reverse;}
+
+.details-content {text-align: start;}
+
+.details-title {
+    font-size: 1.8rem;
+    color: rgb(255, 250, 241);
+    margin-bottom: 13px;
+}
+
+.details-text {
+    font-size: 1.2rem;
+    color: rgb(255, 250, 241);
+    margin-right: 10px;
+}
+
+.details-img {
+    width: 60px;
+    margin-right: 15%;
+}
+
+.phone .details-img {
+    margin-right: 0;
+    margin-left: 25%;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .details-container{
+        justify-content: center;
+        width: 90%;
+    }
+    
+    .details-block{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .phone {flex-direction: column;}
+
+    .details-content {text-align: center;}
+    
+    .details-text {text-align: center;}
+    
+    .details-img {margin: 10px auto 60px;}
+
+    .phone .details-img {margin: 10px auto 60px;}
+}
+
+@media screen and (min-width: 1260px) {
+    .details-container{width: 75%;}
+
+    .details-img {
+        width: 80px;
+        margin: 0 auto 34px;
+    }
+
+    .phone .details-img {margin: 0 auto 34px;}
+}
+
+/*map*/
+
+.map-img {
+    object-fit: cover;
+    margin: 5%;
+    width: 90%;
+    height: 464px;
+    border: 4px solid rgb(255, 250, 241);
+    opacity: 0.8;
+}
+
+.map-link:hover .map-img{
+   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .map-img {
+        content: url(../img/img_map_tablet.png);
+        height: 348px;
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .map-img {
+        content: url(../img/img_map.jpg);
+        height: 429px;
+    }
+}
+
+/*footer*/
+.footer {background-image: url(../img/img_footer\ contact_phone.png);}
+@media screen and (min-width: 768px) {
+    .footer {background-image: url(../img/img_footer\ contact.png);}
+}

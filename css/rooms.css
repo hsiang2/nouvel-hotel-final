@@ -1,0 +1,404 @@
+/*global*/
+html {background-color: rgb(255, 250, 241);}
+
+.page {background-color: rgb(255, 250, 241);}
+
+/*nav*/
+.nav-bg {background-color: rgba(220, 225, 230, 40%);}
+
+.nav__menu {color: rgb(63, 61, 61);}
+
+.left-nav-list {background-color: rgba(255, 250, 241, 0.88);}
+
+.right-nav-link {color: rgb(63, 61, 61);}
+
+.left-nav-link {color: rgb(25, 35, 42);}
+
+.languages select{color:rgb(25, 35, 42);}
+
+select:active, select:hover {color: rgb(96, 124, 120);}
+
+.sublist-link {color: rgb(125, 141, 153);}
+
+@media screen and (min-width: 768px) {
+    .left-nav-list {background-color: transparent;}
+
+    .sublist-link {color: rgb(25, 35, 42);}
+    /* =============hover new============= */
+    .right-nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        display: block;
+        transition: all 0.5s ease;
+        bottom: 30%;
+      }
+      .link6:hover::after {
+        width: 3.3%;
+        height: 0.7px;
+        background-color: rgb(63, 61, 61);;
+      }
+      .link7:hover::after {
+        width: 4.5%;
+        height: 0.7px;
+        background-color: rgb(63, 61, 61);
+      }
+    .left-nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        display: block;
+        transition: all 0.5s ease;
+        bottom:30%;
+      }
+      .link1:hover::after {
+        width: 11%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+      .link5:hover::after {
+        width:6.5%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+      .link2:hover::after {
+        width:10%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+      .link3:hover::after {
+        width:5%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+      .link4:hover::after {
+        width:9%;
+        height: 1px;
+        background-color: rgb(25, 35, 42);
+      }
+}
+
+/*header*/
+.header {
+    background-color: rgb(255, 255, 255);
+    background-image: url(../img/img_header\ room_phone.png);
+}
+
+.header-logo-title {color: rgb(25, 35, 42);}
+
+.header-btn {
+    border: 1px solid rgb(25, 35, 42);
+    /* background-color: rgb(25, 35, 42); */
+    color: rgb(25, 35, 42);
+}
+.header-btn:after {
+    background-color: rgb(25, 35, 42);
+     /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5);
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1); */
+    transition: all 0.3s ease;
+  }
+.header-btn:hover {
+    color: rgb(255, 232, 195);
+  }
+
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        background-image: url(../img/img_header\ room.png);
+    }
+    .header-btn {
+        color: rgb(25, 35, 42);
+        background-color: transparent;
+    }
+    
+    .header-btn:hover {
+        color: rgb(255, 232, 195);
+        /* background-color: rgb(25, 35, 42); */
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .header {
+        height: 462px;
+        background-image: url(../img/img_header\ room.png);
+    }
+
+    .header .container {height: 462px;}
+
+    .header-logo-img {
+        width: 90px;
+        margin-bottom: 25px;
+    }
+    .header-logo-title {font-size: 2.4rem;}
+    .header-btn {font-size: 2rem;}
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 29px;
+    background-color:  rgba(255, 232, 195, 0.44);
+}
+
+.breadcrumb .container {padding-left: 20px;}
+
+/*content*/
+#room-prev,#room-next {
+    position: absolute;
+    top: 250px;
+}
+
+#room-prev{left: 8px;}
+
+#room-next {right: 8px;}
+
+#room-prev:hover,#room-next:hover{
+    cursor: pointer;
+}
+
+#indicator1, #indicator2, #indicator3{
+    position: absolute;
+    z-index: 1;
+    top: 67%;
+    height: 4px;
+    width: 5%;    
+    border-radius: 5px;
+    background-color: rgb(25, 35, 42);
+}
+
+#indicator1 {
+    left: 42%;
+    background-color: rgb(255, 250, 241);
+}
+
+#indicator2 {left: 50%;}
+
+#indicator3 {left: 58%;}
+
+.room-container{position: relative;}
+
+.room {
+    flex-wrap: nowrap;
+    margin: 15px auto 60px;
+    width: 85%;
+    overflow: hidden;
+}
+
+.room-item {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.6s ease;
+}
+
+.room-img {
+    width: 100%;
+    object-fit: cover;
+    height: 407px;
+}
+
+.room-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+    height: 105px;
+    background-color: rgb(25, 35, 42); 
+    color: rgb(255, 232, 195);
+    font-family: 'Cormorant Garamond', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size: 1.8rem;
+}
+
+.room-btn:hover{
+    color: rgb(25, 35, 42);
+    background-color: rgb(255, 250, 241);
+    border: 1px solid rgb(25, 35, 42);
+}
+
+@media screen and (min-width: 768px) { 
+
+    #room-prev,#room-next{display: none;}
+
+    #indicator1, #indicator2, #indicator3{display: none;}
+
+    .room {
+        justify-content: space-evenly;
+        margin: 36px auto 40px;
+        height: auto;
+        width: auto;
+    }
+
+    .room-item {
+        flex-shrink: 1;
+        width: auto;
+    }
+
+    .room-img {
+        width: auto;
+        height: 240px;
+    }
+
+    .room-btn{
+        margin-top: 12px;
+        width: 210px;
+        height: 76px;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1260px) { 
+    .room {margin: 44px auto 46px;}
+
+    .room-img {height: 350px;}
+
+    .room-btn{
+        margin-top: 16px;
+        width: 305px;
+        height: 110px;
+        font-size: 1.8rem;
+    }
+}
+
+/*suites*/
+.suites {
+    background-color: rgb(25, 35, 42);
+    padding-top: 89px;
+    padding-bottom: 20px;
+}
+
+.suites-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 88%;
+    margin: 0 auto 90px;
+}
+
+.deluxe-block {
+    flex-direction: column-reverse;
+}
+
+.suites-img, .deluxe-img {
+    object-fit: cover;
+    height: 225px;
+}
+
+.suites-text-block, .deluxe-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+    height: 280px;
+}
+
+.suites-title{
+    color: rgb(255, 232, 195);
+    font-family: 'Cormorant Garamond', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size: 2.4rem;
+}
+
+.suites-content{
+    margin-top: 10px;
+    color:rgb(255, 250, 241);
+    text-align: center;
+    line-height: 1.4;
+    width: 78%;
+    font-size: 1.8rem;
+    font-family: 'Cormorant Garamond', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+
+.deluxe-text-block{border: none;}
+
+.suites-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: rgb(255, 232, 195);
+    width: 155px;
+    height: 50px;
+    border: 1px solid rgb(255, 232, 195);
+    margin-top: 20px;
+}
+
+.suites-btn:hover{
+    background-color: rgb(255, 232, 195);
+    color: rgb(25, 35, 42);
+}
+
+@media screen and (min-width: 768px) { 
+    
+    .suites-block {
+        flex-direction: row;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto 83px;
+    }
+    
+    .suites-img, .deluxe-img {
+        width: 60%;
+        height: 291px;
+    }
+    
+    .suites-text-block, .deluxe-text-block {
+        padding-top: 45px;
+        border: 1px solid rgb(255, 232, 195);
+        height: 291px;
+    }
+    
+    .suites-text-block {border-left: none;}
+    
+    .suites-title{font-size: 2rem;}
+    
+    .suites-content{font-size: 1.6rem;}
+    
+    .deluxe-text-block{border-right: none;}
+    
+    .suites-btn{
+        width: 139px;
+        height: 43px;
+    }  
+}
+
+@media screen and (min-width: 1260px) { 
+    .suites {
+        padding-top: 143px;
+        padding-bottom: 10px;
+    }
+    
+    .suites-block {
+        width: 76.2%;
+        margin: 0 auto 92px;
+    }
+    
+    .suites-img, .deluxe-img {height: 349px;}
+    
+    .suites-text-block, .deluxe-text-block {
+        padding-top: 65px;
+        height: 349px;
+    }
+    
+    .suites-title{
+        font-size: 2.4rem;
+    }
+    
+    .suites-content{font-size: 1.8rem;}
+
+    .suites-btn{
+        font-size: 1.6rem;
+        width: 170px;
+        height: 50px;
+        margin-top: 30px;
+    } 
+}
+
+/*footer*/
+.footer {background-image: url(../img/img_footer\ room.png);}
